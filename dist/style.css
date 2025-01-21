@@ -35,7 +35,7 @@ width: 100%;
 }
 
 100%{
-    filter: blur(8px);
+    filter: blur(10px);
 }
     
 }
@@ -72,9 +72,205 @@ width: 100%;
     font-family: 'Times New Roman', Times, serif;
     height: fit-content;
     width:fit-content;
+    display: flex;
+}
+
+
+
+#chromakopiatitle{
+    /* width: fit-content; */
+    text-align: center;
 }
 
 #tylermask{
     max-width:  700px;
     max-height: 500px;
+    min-height: 250px;
+    min-width: 350px;
+    
+}
+
+#tylermask2{
+    min-width: 700px;
+    min-height: 250px;
+    max-height: 750px;
+    max-width: 900px;
+}
+
+#albumsgrid{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 5px;
+    justify-self: center;
+    height: 600px;
+    width: 600px;
+}
+
+#albumsgrid img{
+    height: 200px;
+    width: 200px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.1s;
+
+}
+
+#albumsgrid img:hover{
+    transform: scale(1.1);
+    
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#albumsform{
+    gap: 10px;
+    margin: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #mainnapis{
+        font-size: 4rem;
+    }
+
+    #mainpic{
+        height: 60vh;
+    }
+
+    #tickets{
+        font-size: 1.25rem;
+    }
+
+    #kendricktext{
+        flex-direction: column;
+    }
+
+    #chromakopia{
+        font-size: 1.25rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+   
+
+    #albumsgrid img{
+        height: 200px;
+        width: 200px;
+    }
+    #albumsform{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #albumsgrid{
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        gap: 5px;
+        justify-self: center;
+        height: 600px;
+        width: 600px;
+    }
+    
+    
+    
+}
+
+@media screen and (min-width: 1024px){
+
+    #mainpic{
+        height: 75vh;
+    }
+
+    #tickets{
+        font-size: 1.5rem;
+    }
+
+    #kendricktext{
+        flex-direction: row;
+    }  
+    #albumsgrid img{
+        height: 200px;
+        width: 200px;
+    }
+    #albumsform{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    #albumsgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-self: center;
+        height: 600px;
+        width: 600px;
+    }   
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    #albumsform{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+
+    #chromakopia img{
+        max-width: 320px;
+    }
+
+    #mainnapis{
+        font-size: 3rem;
+    }
+
+    #mainpic{
+        height: 50vh;
+    }
+
+    #tickets{
+        font-size: 1rem;
+    }
+
+    #kendricktext{
+        flex-direction: column;
+    }
+
+    #chromakopia{
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
+    #chromakopiatitle{
+        font-size: xx-large;
+    }
+
+    #tylermask{
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    #tylermask2{
+        min-width: 100%;
+        min-height: auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    #albumsgrid img{
+        height: 100px;
+        width: 100px;
+    }
+
+    #albumsgrid{
+        display: grid;
+        grid-template-columns:  1f 1fr 1fr;
+        gap: 5px;
+        justify-self: center;
+        height: 300px;
+        width: 300px;
+    }   
+    
 }

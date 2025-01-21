@@ -554,14 +554,6 @@ video {
   display: none;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
-.m-11 {
-  margin: 2.75rem;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -574,24 +566,13 @@ video {
   height: 3.5rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.h-5\/6 {
-  height: 83.333333%;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
 .max-h-72 {
   max-height: 18rem;
 }
 
-.max-h-96 {
-  max-height: 24rem;
+.max-h-fit {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 .min-h-fit {
@@ -599,24 +580,8 @@ video {
   min-height: fit-content;
 }
 
-.min-h-96 {
-  min-height: 24rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
 .max-w-72 {
   max-width: 18rem;
-}
-
-.flex-initial {
-  flex: 0 1 auto;
 }
 
 .flex-shrink {
@@ -631,8 +596,8 @@ video {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -643,8 +608,12 @@ video {
   justify-content: space-between;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-6 {
@@ -674,6 +643,10 @@ video {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .pb-0 {
@@ -719,13 +692,18 @@ video {
   line-height: 2.5rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
 .text-6xl {
   font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -776,6 +754,20 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:font-medium:hover {
+  font-weight: 500;
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
@@ -792,4 +784,8 @@ video {
 
 .hover\:underline-offset-auto:hover {
   text-underline-offset: auto;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
