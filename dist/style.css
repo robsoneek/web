@@ -166,6 +166,7 @@ nav{
     }
 
     #chromakopia{
+        font-size: 1.25rem;
         flex-direction: column;
         width: 100%;
     }
@@ -196,6 +197,7 @@ nav{
 }
 
 /* @media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){
 
     #mainpic{
         height: 75vh;
@@ -242,6 +244,9 @@ nav{
         flex-direction: column;
         gap: 0px;
     }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
     #albumsform{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
