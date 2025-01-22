@@ -65,9 +65,21 @@ h1{
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
+    h1{
+        font-size: 4rem;
+    }
+    #lucki {
+        flex-direction: row; 
+    }
 }
 @media screen and (min-width: 1024px){
-    
+    h1{
+        font-size: 6rem;
+    }
+    #lucki {
+        flex-direction: row; 
+    }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -90,5 +102,9 @@ h1{
     ul>li{
         flex-direction: column;
         align-items: center;
+    }
+
+    h1{
+        font-size: 3rem;
     }
 }

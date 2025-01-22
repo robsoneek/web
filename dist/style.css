@@ -359,11 +359,15 @@ nav{
 
     #albumsgrid{
         display: grid;
-        grid-template-columns:  1f 1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr;
         gap: 5px;
         justify-self: center;
         height: 300px;
         width: 300px;
     }   
+
+    #email{
+        font-size: 1rem;
+    }
     
 }
