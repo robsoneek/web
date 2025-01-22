@@ -2,26 +2,41 @@ body {
     background: linear-gradient(to bottom, black, #363b37);
 height: 100%;
 width: 100%;
-
+/* padding-left: 20px;
+padding-right: 20px; */
 
 }
 
-.paragraph{
-    font-family: 'Times New Roman', Times, serif;
+*{
+    font-family: Akira; 
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
+
+@font-face {
+    font-family: Akira;
+    src: url(Akira\ Expanded\ Demo.otf);
+}
+
 
 #mainnapis{
     position: absolute; 
     top: 25%; 
     left:50%; 
     transform: translate(-50%, -50%); 
-    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#mainnapis2{
+    position: absolute; 
+    top: 35%; 
+    left:50%; 
+    transform: translate(-50%, -50%); 
 }
 
 #mainpic{
     background-image: url(img/kendrick.jpg);
     background-size: cover;
-    height: 100vh;
     filter: blur(4px);
     animation-name: bgblur;
     animation-duration: 5s;
@@ -41,7 +56,7 @@ width: 100%;
 }
 #tickets{
     position: absolute; 
-    top: 45%; 
+    top: 50%; 
     left:50%; 
     transform: translate(-50%, -50%); 
 }
@@ -62,6 +77,8 @@ width: 100%;
 }   */
 
 #kendricktext{
+    padding-left: 25px;
+    padding-right: 25px;
     height: fit-content;
     width:fit-content;
     display: flex;
@@ -73,6 +90,8 @@ width: 100%;
     height: fit-content;
     width:fit-content;
     display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 
@@ -82,7 +101,7 @@ width: 100%;
     text-align: center;
 }
 
-#tylermask{
+/* #tylermask{
     max-width:  700px;
     max-height: 500px;
     min-height: 250px;
@@ -91,11 +110,11 @@ width: 100%;
 }
 
 #tylermask2{
-    min-width: 700px;
+    max-width:  700px;
+    max-height: 500px;
     min-height: 250px;
-    max-height: 750px;
-    max-width: 900px;
-}
+    min-width: 350px;
+} */
 
 #albumsgrid{
     display: grid;
@@ -104,6 +123,7 @@ width: 100%;
     justify-self: center;
     height: 600px;
     width: 600px;
+    margin-bottom: 30px;
 }
 
 #albumsgrid img{
@@ -119,21 +139,21 @@ width: 100%;
     
 }
 
-h2{
-    font-family: 'Times New Roman', Times, serif;
-}
 
 #albumsform{
     gap: 10px;
-    margin: 5px;
+}
+
+footer{
+    margin-top: 10px;
 }
 
 nav>ul{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     justify-content: space-between;
     padding: auto;
 }
@@ -195,9 +215,17 @@ nav{
     
     
 }
-
-/* @media screen and (min-width: 1024px){
 @media screen and (min-width: 1024px){
+
+    #chromakopia{
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+        max-height: fit-content;
+        width: 100%;
+    }
 
     #mainpic{
         height: 75vh;
@@ -229,9 +257,16 @@ nav{
         width: 600px;
     }   
     
-} */
+} 
 
 @media screen and (min-width: 320px) and (max-width: 767px){
+
+
+    #tickets{
+        position: absolute; 
+        top: 47%; 
+        transform: translate(-50%, -50%); 
+    }
 
     nav>ul{
         flex-direction: column;
@@ -244,9 +279,13 @@ nav{
         flex-direction: column;
         gap: 0px;
     }
-}
 
-@media screen and (min-width: 320px) and (max-width: 767px){
+    #mainnapis{
+        position: absolute; 
+        top: 33%;
+        transform: translate(-50%, -50%); 
+        font-family: 'Times New Roman', Times, serif;
+    }
     #albumsform{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -272,6 +311,7 @@ nav{
 
     #kendricktext{
         flex-direction: column;
+        font-size: 1rem;
     }
 
     #chromakopia{
@@ -283,17 +323,17 @@ nav{
         font-size: xx-large;
     }
 
-    #tylermask{
-        max-width: 100%;
-        max-height: auto;
-    }
+        /* #tylermask{
+            max-width: 100%;
+            max-height: auto;
+        }
 
-    #tylermask2{
-        min-width: 100%;
-        min-height: auto;
-        max-height: 100%;
-        max-width: 100%;
-    }
+        #tylermask2{
+            min-width: 100%;
+            min-height: auto;
+            max-height: 100%;
+            max-width: 100%;
+        } */
 
     #albumsgrid img{
         height: 100px;
