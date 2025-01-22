@@ -51,6 +51,25 @@ nav{
     min-height: max-content;
 }
 
+#lucki{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    margin: 20px;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+@media screen and (min-width: 1024px){
+    
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px){
 
     nav>ul{
@@ -63,5 +82,13 @@ nav{
         display: flex;
         flex-direction: column;
         gap: 0px;
+    }
+    nav>ul>div{
+        flex-direction: column;
+    }
+    
+    ul>li{
+        flex-direction: column;
+        align-items: center;
     }
 }

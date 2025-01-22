@@ -4,7 +4,6 @@ height: 100%;
 width: 100%;
 /* padding-left: 20px;
 padding-right: 20px; */
-
 }
 
 *{
@@ -19,41 +18,61 @@ padding-right: 20px; */
 }
 
 
-#mainnapis{
+#mainnapis {
     position: absolute; 
     top: 25%; 
-    left:50%; 
+    left: 50%; 
     transform: translate(-50%, -50%); 
-    
+    text-align: center;
 }
 
-#mainnapis2{
+#mainnapis2 {
     position: absolute; 
     top: 35%; 
-    left:50%; 
+    left: 50%; 
     transform: translate(-50%, -50%); 
 }
 
-#mainpic{
-    background-image: url(img/kendrick.jpg);
+#main {
+    height: fit-content;
+    width: 100%;
     background-size: cover;
+}
+
+#kendrick {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#kendrick::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/kendrick.jpg');
+    background-size: cover;
+    background-position: center;
     filter: blur(4px);
     animation-name: bgblur;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    z-index: -1;
 }
 
-@keyframes  bgblur{
-0%{
-    filter: blur(4px);
+@keyframes bgblur {
+    0% {
+        filter: blur(4px);
+    }
+    100% {
+        filter: blur(10px);
+    }
 }
 
-100%{
-    filter: blur(10px);
-}
-    
-}
 #tickets{
     position: absolute; 
     top: 50%; 
@@ -172,6 +191,7 @@ nav{
     #mainnapis{
         font-size: 4rem;
     }
+    
 
     #mainpic{
         height: 60vh;
@@ -283,8 +303,8 @@ nav{
     #mainnapis{
         position: absolute; 
         top: 33%;
-        transform: translate(-50%, -50%); 
-        font-family: 'Times New Roman', Times, serif;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
     }
     #albumsform{
         display: grid;
@@ -297,9 +317,6 @@ nav{
         max-width: 320px;
     }
 
-    #mainnapis{
-        font-size: 3rem;
-    }
 
     #mainpic{
         height: 50vh;
